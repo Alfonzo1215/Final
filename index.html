@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Alfonzo1215</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<center>
+<h1>Instrument Store</h1>
+</center>
+
+<div id=store>
+  
+   <div v-if="showPopUp" v-on:click="showPopUp=false">
+    <div class="popUp">
+      <div v-if="popUpItem.image"><img v-bind:src="popUpItem.image"/></div>
+      <div>{{popUpitem.name}}</div>
+      <div>{{popUpitem.type}}</div>
+      <div>{{popUpitem.price}}</div>
+      <div>{{popUpitem.brand}}</div>
+    </div>
+  </div>
+
+  <div v-for="item in items">
+    <div class="item" v-on:click="popUp(item)" v-bind:class="item.brand">
+      <img :src="item.image"/>
+      <div class="name">
+      <p>{{item.name}}</p>
+      </div>
+      <button class="buttonone" v-on:click="addToCart">Add to cart</button>
+      </div>
+  </div>
+    </div>
+  <div class="cart" v-on:click="empty">
+     <div class="cart">
+       
+     </div>
+  
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

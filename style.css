@@ -1,0 +1,93 @@
+body {
+  background-image: url("https://guitar.com/wp-content/uploads/2019/03/Gretsch-G6620T-Players-Edition-hero@1400x1050.jpg");
+  border: solid;
+  height: 1000px;
+}
+h1 {
+  font-family: Times, Serif;
+  font-size: 100px;
+  border: none;
+  width: 1000px;
+}
+
+#store {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  height: 350px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 16px;
+  overflow: hidden;
+  margin-left: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.name{
+  height:450px;
+  width:175px;
+  position:absolute;
+  bottom:5;
+  left:3;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+img{
+  height:200px;
+}
+
+.Fender:hover {
+  background-color: red;
+  color: white;
+}
+
+.Yamaha:hover {
+  background-color: green;
+  color: white;
+}
+
+.Maton:hover {
+  background-color: blue;
+  color: white;
+}
+
+.buttonone {
+position: absolute;
+bottom: 10px;
+}
+
+.cart{
+  float: right;
+  height:50px;
+  width:100px;
+  margin: 10px;
+  border:none;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.popUp{
+  height:100%;
+  width:100%;
+  background-color:rgba(100, 60, 100, 0.75);
+  position: absolute;
+  top:0;
+  left:0;
+  display:none;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
